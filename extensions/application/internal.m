@@ -3,6 +3,7 @@
 #import <LuaSkin/LuaSkin.h>
 #import "application.h"
 #import "../window/window.h"
+#import "application-Swift.h"
 
 #define get_app(L, idx) *((AXUIElementRef*)luaL_checkudata(L, idx, "hs.application"))
 #define nsobject_for_app(L, idx) [NSRunningApplication runningApplicationWithProcessIdentifier: pid_for_app(L, idx)]
@@ -264,18 +265,31 @@ static int application_allWindows(lua_State* L) {
 
     if (!app) return 1;
 
-    CFArrayRef windows;
-    AXError result = AXUIElementCopyAttributeValues(app, kAXWindowsAttribute, 0, 100, &windows);
-    if (result == kAXErrorSuccess) {
-        for (NSInteger i = 0; i < CFArrayGetCount(windows); i++) {
-            AXUIElementRef win = CFArrayGetValueAtIndex(windows, i);
-            CFRetain(win);
-
-            new_window(L, win);
-            lua_rawseti(L, -2, (int)(i + 1));
-        }
-        CFRelease(windows);
+    NSArray<AxUIElementWrap *> * array = [WindowsHelper getAllWindows: app];
+      
+    NSInteger count = array.count;
+    for(int i=0; i< count; i++){
+        AXUIElementRef win = array[i].element;
+        CFRetain(win);
+        
+        new_window(L, win);
+        lua_rawseti(L, -2, (int)(i + 1));
     }
+  
+    
+// 下面的代码只能获取到当前space中的窗体
+//    CFArrayRef windows;
+//    AXError result = AXUIElementCopyAttributeValues(app, kAXWindowsAttribute, 0, 100, &windows);
+//    if (result == kAXErrorSuccess) {
+//        for (NSInteger i = 0; i < CFArrayGetCount(windows); i++) {
+//            AXUIElementRef win = CFArrayGetValueAtIndex(windows, i);
+//            CFRetain(win);
+//
+//            new_window(L, win);
+//            lua_rawseti(L, -2, (int)(i + 1));
+//        }
+//        CFRelease(windows);
+//    }
 
     return 1;
 }

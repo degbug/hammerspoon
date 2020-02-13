@@ -257,6 +257,15 @@
 		949CDBFE1990747B00906CCE /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949CDBFD1990747B00906CCE /* PreferencesWindow.xib */; };
 		949CDC001990759B00906CCE /* ConsoleWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949CDBFF1990759B00906CCE /* ConsoleWindow.xib */; };
 		94A1E5481993AC5C003AEB26 /* MJFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A1E5471993AC5C003AEB26 /* MJFileUtils.m */; };
+		B658795C23F56FB4002926B3 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658795B23F56FB4002926B3 /* Preferences.swift */; };
+		B658795E23F56FD8002926B3 /* AXUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658795D23F56FD8002926B3 /* AXUIElement.swift */; };
+		B658796023F56FF7002926B3 /* AxUIElementWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658795F23F56FF7002926B3 /* AxUIElementWrap.swift */; };
+		B658796223F5700D002926B3 /* CGWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658796123F5700D002926B3 /* CGWindow.swift */; };
+		B658796423F57024002926B3 /* CGWindowID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658796323F57024002926B3 /* CGWindowID.swift */; };
+		B658796623F5703D002926B3 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658796523F5703D002926B3 /* HelperExtensions.swift */; };
+		B658796823F57052002926B3 /* PrivateApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658796723F57052002926B3 /* PrivateApis.swift */; };
+		B658796A23F57063002926B3 /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658796923F57063002926B3 /* Spaces.swift */; };
+		B658796C23F570C4002926B3 /* WindowsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658796B23F570C4002926B3 /* WindowsHelper.swift */; };
 		B8524F2C201A88CD00844F3D /* LuaSkin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9850E81B722CBF00F7E909 /* LuaSkin.framework */; };
 		B8524F32201A896000844F3D /* internal.m in Sources */ = {isa = PBXBuildFile; fileRef = B8524F25201A875600844F3D /* internal.m */; };
 		D02F95291A00221C00E28BB2 /* HSrequire_all.m in Sources */ = {isa = PBXBuildFile; fileRef = D02F95281A00221C00E28BB2 /* HSrequire_all.m */; };
@@ -1308,6 +1317,16 @@
 		949CDBFF1990759B00906CCE /* ConsoleWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleWindow.xib; sourceTree = "<group>"; };
 		94A1E5461993AC5C003AEB26 /* MJFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFileUtils.h; sourceTree = "<group>"; };
 		94A1E5471993AC5C003AEB26 /* MJFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFileUtils.m; sourceTree = "<group>"; };
+		B658795A23F56FB3002926B3 /* application-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "application-Bridging-Header.h"; sourceTree = "<group>"; };
+		B658795B23F56FB4002926B3 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		B658795D23F56FD8002926B3 /* AXUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXUIElement.swift; sourceTree = "<group>"; };
+		B658795F23F56FF7002926B3 /* AxUIElementWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxUIElementWrap.swift; sourceTree = "<group>"; };
+		B658796123F5700D002926B3 /* CGWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGWindow.swift; sourceTree = "<group>"; };
+		B658796323F57024002926B3 /* CGWindowID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGWindowID.swift; sourceTree = "<group>"; };
+		B658796523F5703D002926B3 /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		B658796723F57052002926B3 /* PrivateApis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateApis.swift; sourceTree = "<group>"; };
+		B658796923F57063002926B3 /* Spaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spaces.swift; sourceTree = "<group>"; };
+		B658796B23F570C4002926B3 /* WindowsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsHelper.swift; sourceTree = "<group>"; };
 		B8524F24201A875600844F3D /* init.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = init.lua; path = extensions/hid/init.lua; sourceTree = "<group>"; };
 		B8524F25201A875600844F3D /* internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = internal.m; path = extensions/hid/internal.m; sourceTree = "<group>"; };
 		B8524F31201A88CD00844F3D /* libhid.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libhid.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2767,6 +2786,7 @@
 		4FBE2CFA1B7261C100407788 /* application */ = {
 			isa = PBXGroup;
 			children = (
+				B658795923F56F50002926B3 /* swift-enhance */,
 				4FBE2CFB1B7261E500407788 /* application.h */,
 				4FBE2CFC1B7261E500407788 /* init.lua */,
 				4FBE2CFD1B7261E500407788 /* internal.m */,
@@ -3303,6 +3323,24 @@
 				4F5B6E6D1E9E87CE003FC580 /* HSAppleScript.m */,
 			);
 			name = Auxiliary;
+			sourceTree = "<group>";
+		};
+		B658795923F56F50002926B3 /* swift-enhance */ = {
+			isa = PBXGroup;
+			children = (
+				B658795B23F56FB4002926B3 /* Preferences.swift */,
+				B658795A23F56FB3002926B3 /* application-Bridging-Header.h */,
+				B658795D23F56FD8002926B3 /* AXUIElement.swift */,
+				B658795F23F56FF7002926B3 /* AxUIElementWrap.swift */,
+				B658796123F5700D002926B3 /* CGWindow.swift */,
+				B658796323F57024002926B3 /* CGWindowID.swift */,
+				B658796523F5703D002926B3 /* HelperExtensions.swift */,
+				B658796723F57052002926B3 /* PrivateApis.swift */,
+				B658796923F57063002926B3 /* Spaces.swift */,
+				B658796B23F570C4002926B3 /* WindowsHelper.swift */,
+			);
+			name = "swift-enhance";
+			path = "extensions/application/swift-enhance";
 			sourceTree = "<group>";
 		};
 		B8524F23201A874600844F3D /* hid */ = {
@@ -5724,6 +5762,9 @@
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 9445CA0A19083251002568BB;
 					};
+					4FBE2CEF1B7261A200407788 = {
+						LastSwiftMigration = 1130;
+					};
 					4FD0AC081B74BACD00A82496 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -6388,7 +6429,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B658796623F5703D002926B3 /* HelperExtensions.swift in Sources */,
+				B658796C23F570C4002926B3 /* WindowsHelper.swift in Sources */,
+				B658796423F57024002926B3 /* CGWindowID.swift in Sources */,
+				B658795E23F56FD8002926B3 /* AXUIElement.swift in Sources */,
+				B658795C23F56FB4002926B3 /* Preferences.swift in Sources */,
+				B658796A23F57063002926B3 /* Spaces.swift in Sources */,
+				B658796823F57052002926B3 /* PrivateApis.swift in Sources */,
 				4FBE2CFF1B7261E500407788 /* internal.m in Sources */,
+				B658796023F56FF7002926B3 /* AxUIElementWrap.swift in Sources */,
+				B658796223F5700D002926B3 /* CGWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8140,6 +8190,7 @@
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = "$(inherited)";
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = "$(inherited)";
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_ASSIGN_ENUM = "$(inherited)";
 				CLANG_WARN_BOOL_CONVERSION = "$(inherited)";
 				CLANG_WARN_CONSTANT_CONVERSION = "$(inherited)";
@@ -8191,11 +8242,15 @@
 				GCC_WARN_UNUSED_PARAMETER = "$(inherited)";
 				GCC_WARN_UNUSED_VALUE = "$(inherited)";
 				GCC_WARN_UNUSED_VARIABLE = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = "$(inherited)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "extensions/application/swift-enhance/application-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Profile;
 		};
@@ -17828,6 +17883,7 @@
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = "$(inherited)";
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = "$(inherited)";
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_ASSIGN_ENUM = "$(inherited)";
 				CLANG_WARN_BOOL_CONVERSION = "$(inherited)";
 				CLANG_WARN_CONSTANT_CONVERSION = "$(inherited)";
@@ -17879,11 +17935,15 @@
 				GCC_WARN_UNUSED_PARAMETER = "$(inherited)";
 				GCC_WARN_UNUSED_VALUE = "$(inherited)";
 				GCC_WARN_UNUSED_VARIABLE = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = "$(inherited)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "extensions/application/swift-enhance/application-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -17895,6 +17955,7 @@
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = "$(inherited)";
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = "$(inherited)";
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_ASSIGN_ENUM = "$(inherited)";
 				CLANG_WARN_BOOL_CONVERSION = "$(inherited)";
 				CLANG_WARN_CONSTANT_CONVERSION = "$(inherited)";
@@ -17944,11 +18005,14 @@
 				GCC_WARN_UNUSED_PARAMETER = "$(inherited)";
 				GCC_WARN_UNUSED_VALUE = "$(inherited)";
 				GCC_WARN_UNUSED_VARIABLE = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = "$(inherited)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "extensions/application/swift-enhance/application-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
